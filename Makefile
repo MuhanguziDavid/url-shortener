@@ -21,4 +21,5 @@ stop:
 # `make test` will be used after `make setup` in order to run
 # your test suite.
 test:
-	docker run -e CI=true url-shortener_web:latest npm run test
+	docker-compose -p tests run -p 8080 --rm web npm run test
+	docker stop tests_redis_1
