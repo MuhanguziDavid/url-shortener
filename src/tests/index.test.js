@@ -7,9 +7,10 @@ chai.use(chaiHttp);
 
 describe('URL Shortener', () => {
   let app, server;
-  before('staring server', function() {
+  before('staring server', function(done) {
     app = require('../index');
     server = chai.request(app).keepOpen();
+    done();
   });
 
   it('should load default page', (done) => {
