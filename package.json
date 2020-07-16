@@ -1,0 +1,34 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "The goal of this exercise is to create a URL shortener web application in the same vein as [bitly](https://bitly.com/), [TinyURL](https://tinyurl.com/), or the now defunct [Google URL Shortener](https://goo.gl/). It is intentionally open-ended and you are welcome to implement your solution using the language and tech stack of your choice, but the core functionality of the application should be expressed through your own original code. This is your opportunity to show off your design and development strengths to our engineering team.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./src/tests/*.js --exit",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhanguziDavid/url-shortener.git"
+  },
+  "author": "David Muhanguzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhanguziDavid/url-shortener/issues"
+  },
+  "homepage": "https://github.com/MuhanguziDavid/url-shortener#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "morgan": "^1.10.0",
+    "redis": "^3.0.2",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4"
+  }
+}
